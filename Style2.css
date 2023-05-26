@@ -1,0 +1,190 @@
+/* Configuração da tela*/
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ECECEC;
+}
+.tela{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tamanho da imagem logo
+- Ela se adapta de acordo com o tamanho da tela
+*/
+.img_logo{
+    width: 20%;
+    min-width: 150px;
+}
+/*Definição do topo da página(Logo e barra de pesquisa)*/
+.topo{
+    height: 20%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* Estilização da barra de pesquisa
+- Incluindo input, button e icon lupa
+*/
+
+.barra_de_pesquisa{  
+    background-color: #D9D9D9;
+    width: 80%;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0px 3px 5px #B1B1B1;
+}
+.btn_lupa{
+    transition: transform 0.3s ease-in-out;
+    background-color: transparent;
+    border-style: none;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-right: 1%;
+}
+.btn_lupa:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.img_lupa{
+    height: 25px;
+}
+.input_pesquisar{
+    width: 80%;
+    margin-left: 2%;
+    background-color: transparent;
+    border-style: none;   
+}
+input[type="search"]{
+    outline: none;
+    caret-color: #939393;
+    caret-shape: bar;
+    transform: scale(1, 1.4);
+}
+
+/*Estilização do corpo de resposta(com os links e textos)*/
+.corpo{
+    display: flex;
+    flex-direction: row;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.resultados_pesquisa{
+    width: 100%;
+    
+}
+.img_area{
+    display: none;
+}
+.img_area > img{
+    margin: 5px;
+    max-width: 40%;
+    min-width: 15%;
+}
+
+/*Estilização do filtro*/
+.filtro{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rectangle4
+{
+
+    background-color:#d9d9d9;
+    height:34px;
+    width:102px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 3%;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border-radius:30px;
+    transition: background-color 0.3s ease-in-out;
+}
+.rectangle4:hover{
+    cursor: pointer;
+    background-color: #B1B1B1;
+}
+.fechado{
+    width: 40px;
+    
+}
+
+.rectangle4 img{
+    height: 100%;
+}
+.rectangle4 p{
+    display: inline;
+    color: #939393;
+}
+
+.links a{
+    color: #76529A;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+.paginacao{
+    position: relative;
+    top: 40px;
+}
+.item{
+    display: inline-block;
+    background-color: #D9D9D9;
+    border: 1px solid #939393;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: #939393;
+}
+.item:hover{
+    cursor: pointer;
+}
+.atual{
+    background-color: #FCC419;
+    border-color: #FCC419;
+    padding: 15px 25px 15px 25px;
+}
+
+@media(min-width: 992px){
+    .custom-lg-pos{
+        border-bottom: 1px solid #939393;
+        box-shadow: 0px 3px 5px #B1B1B1;
+        flex-direction: row;
+        justify-content: start;
+    }
+    .custom-lg-bar-pos{
+        position: relative;
+        left: 2%;
+        width: 40%;
+    }
+    .custom-lg-img-dis{
+        padding-left: 10%;
+        width: 50%;
+        display: inline-block;
+    }
+    .custom-lg-text{
+        width: 50%;
+    }
+    .custom-lg-filtro{
+        justify-content: start;
+        padding-left: 10%;
+    }
+}
